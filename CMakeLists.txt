@@ -19,3 +19,6 @@ target_link_libraries(cpp_rpl
         lib_rpl
         lib_base
         )
+#if (CPP_RPL_BUILD_EXAMPLE)
+    add_subdirectory(example)
+#endif ()

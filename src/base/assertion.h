@@ -9,7 +9,7 @@ namespace base
 namespace assertion
 {
 
-void log(const char* message, const char* file, int line)
+inline void log(const char* message, const char* file, int line)
 {
     // TODO: here make logging system
 }
