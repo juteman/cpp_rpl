@@ -16,7 +16,7 @@ namespace rpl
 template <typename Value = empty_value, typename Error = no_error> class event_stream
 {
 public:
-    event_stream();
+    event_stream() noexcept = default;
 
     event_stream(event_stream&& other);
 
@@ -84,7 +84,6 @@ private:
     mutable std::shared_ptr<Data> _data;
 };
 
-template <typename Value, typename Error> inline event_stream<Value, Error>::event_stream() {}
 
 template <typename Value, typename Error> inline event_stream<Value, Error>::event_stream(event_stream&& other) :
     _data(details::take(other._data))

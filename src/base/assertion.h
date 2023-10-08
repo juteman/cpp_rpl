@@ -2,7 +2,7 @@
 #include <cstdlib>
 
 // Ensures/Expects.
-#include <gsl/gsl_assert>
+#include <gsl/assert>
 
 namespace base
 {

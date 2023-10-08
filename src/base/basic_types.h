@@ -1,4 +1,4 @@
-#pragma ince
+#pragma once
 
 #include "unique_function.h"
 #include "gsl/gsl"
