@@ -74,3 +74,5 @@ CMakeLists.txt.user*
 
 cmake-build-debug-visual-studio/
 .idea
+build/
+.vscode/
